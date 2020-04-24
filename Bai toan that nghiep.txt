@@ -1,0 +1,14 @@
+import numpy as np
+
+x=np.array([0.998,0.136])
+y=np.array([0.002,0.864])
+A=np.array([x,y])
+v0=np.array([[0.95],[0.05]])
+A100=A
+for i in range (1000):
+  A100=A.dot(A)
+print("Ti le co viec va that nghiep tuan 100: ")
+print(A100)
+result=A100.dot(v0)
+print("Ti le nguoi co viec va that nghiep tuan 100: ")
+print(result)
